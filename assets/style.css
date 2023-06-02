@@ -39,6 +39,53 @@ a:visited{
 
 }
 
+nav.image-container{
+    align-items: center;
+    position: relative; 
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(410px, auto);
+    grid-gap: 20px;
+
+}
+
+a#Horiseon{
+    grid-column: 1/4;
+}
+
+
+a.Temp{
+ color: #ccc;
+ text-decoration: underline;
+ font-size: 20px;
+}
+
+a.Temp img{
+    display: block;
+    align-items: center;
+    height: 410px;
+    margin: 15px auto 0;
+}
+
+a.row-2 img{
+    width: 225px;
+}
+
+span.image-title{
+    /* position: absolute; */
+    display: block;
+    align-items: center;
+    text-decoration: underline;
+    /* top: -20px; */
+    color: #ccc;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 1;
+}
+
 main{
     display: flex;
     flex-wrap: wrap;
